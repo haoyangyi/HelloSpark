@@ -1,0 +1,13 @@
+Mllib数据格式处理
+– MLUtils类，用于辅助加载，保存处理Mllib相关算法所需要的数据
+– loadLibSVMFile 加载libsvm格式二进制文件，一般用于分类和回归
+算法中
+– loadLabeledPoints 加载RDD[LabeledPoint].saveAsTextFile存储的
+文件
+– saveAsLibSVMFile 存储为libsvm格式二进制文件
+– appendBias 对向量增加偏置项，一般算法实现中可能会遇到
+– fastSquaredDistance 一种快速计算向量距离的方法
+
+
+Mllib数据格式处理
+• 一些算法的数据生成器
